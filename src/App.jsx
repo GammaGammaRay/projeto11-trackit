@@ -13,6 +13,7 @@ import Historico from "./screens/Historico.jsx";
 import Hoje from "./screens/Hoje.jsx";
 // Components
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <Footer />
               <Habitos />
             </>
           }
@@ -39,6 +41,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <Footer />
               <Hoje />
             </>
           }
@@ -48,6 +51,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <Footer />
               <Historico />
             </>
           }

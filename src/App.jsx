@@ -5,18 +5,20 @@ import GlobalStyle from "./style/GlobalStyle.js";
 import ResetStyle from "./style/ResetStyle.js";
 import styled from "styled-components";
 import axios from "axios";
+
 // Pages
 import Login from "./screens/Login.jsx";
 import RegisterUser from "./screens/RegisterUser.jsx";
 import Habitos from "./screens/Habitos.jsx";
 import Historico from "./screens/Historico.jsx";
 import Hoje from "./screens/Hoje.jsx";
+
 // Components
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import { UserContext } from "./components/Context.js";
 
-
-
+axios.defaults.headers.common["Authorization"] = "5wY65Pq5uCOFfh5yfnMVGhIF";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       <ResetStyle />
       <Routes>
         <Route path="/" element={<Login />} />
+
         <Route path="/cadastro" element={<RegisterUser />} />
         <Route
           path="/habitos"
